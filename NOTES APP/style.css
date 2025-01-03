@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #cf9aff, #95c0ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.container h1 {
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+img {
+    width: 60px;
+}
+
+.container button img {
+    width: 25px;
+    margin-right: 8px;
+    color: #bb5656;
+}
+
+.container button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #9418fd, #571094);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    border-radius: 40px;
+    padding: 15px 25px;
+    margin: 30px 0 20px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.container button:hover {
+    background: linear-gradient(135deg, #b036ff, #6c12d1);
+    transform: scale(1.05);
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    min-height: 140px;
+    background: #fff;
+    color: #333;
+    padding: 20px;
+    margin: 20px 0;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    transition: box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.input-box:focus-within {
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #9418fd;
+}
+
+.input-box img {
+    width: 25px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.input-box img:hover {
+    transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .input-box {
+        max-width: 100%;
+        min-height: 120px;
+        padding: 15px;
+    }
+
+    .container button {
+        padding: 10px 20px;
+    }
+}
